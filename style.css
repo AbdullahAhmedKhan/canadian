@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+#check:checked ~ ul {
+  top: 0;
+  z-index: -1;
+}
+.banner-1 {
+  background-image: url(images/banner_1_802.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-2 {
+  background-image: url(images/banner_2_768.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-3 {
+  background-image: url(images/banner_3_866.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
