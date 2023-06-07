@@ -21,3 +21,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.number-box {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  background-color: #fef4f4;
+  color: #c30505;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
