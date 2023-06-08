@@ -34,3 +34,17 @@
   align-items: center;
   margin-right: 15px;
 }
+.red {
+  color: #c30505;
+}
+.content-card:hover .content p {
+  color: white;
+}
+.content-card:hover .content h2 {
+  color: white;
+}
+.content-card:hover .content {
+  background-color: #c30505;
+  transform: translateY(-12px);
+  transition: all 0.5s ease;
+}
