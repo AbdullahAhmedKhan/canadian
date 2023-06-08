@@ -30,10 +30,6 @@
   color: #fff;
   padding: 10px 5px;
   transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 15s;
-  -o-transition: all 0.5s ease;
 }
 .animatedBtn:before {
   content: "";
@@ -81,9 +77,6 @@
   padding: 12px 18px;
   font-size: 20px;
   color: #fff;
-}
-.about-img-box {
-  position: relative;
 }
 .red {
   color: #c30505;
