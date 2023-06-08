@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 * {
   font-family: "Montserrat", sans-serif;
 }
 #check:checked ~ ul {
   top: 0;
-  z-index: -1;
+  z-index: 1;
 }
 .banner-1 {
   background-image: url(images/banner_1_802.png);
@@ -21,6 +22,44 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.salauddin {
+  font-family: "Great Vibes", cursive;
+}
+
+.animatedBtn {
+  position: relative;
+  display: inline-block;
+  line-height: 20px;
+  color: #fff;
+  padding: 10px 5px;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 15s;
+  -o-transition: all 0.5s ease;
+}
+.animatedBtn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e72318;
+  transition: all 1s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+.animatedBtn:hover {
+  color: #ffffff;
+  background-color: #ff0000;
+  transform: translateX(0);
+}
+.animatedBtn:hover:before {
+  width: 100%;
+  transform: translateX(0);
+}
+
 .number-box {
   width: 70px;
   height: 70px;

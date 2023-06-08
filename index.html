@@ -34,10 +34,22 @@
     <section class="w-full lg:px-24 max-sm:px-4 py-3">
         <div class="flex lg:justify-between max-sm:justify-normal items-center">
             <div>
-                <label for="check" class="float-left text-red-600 text-3xl leading-[80px] mr-4 lg:hidden max-sm:leading-[60px]">
-                    <i class="fa-solid fa-bars "></i>
-                </label>
-                <img src="images/main-logo.png" alt="" class="w-48 max-sm:w-36">
+                <!-- <label for="check" class="float-left text-red-600 text-2xl leading-[80px] mr-4 lg:hidden max-sm:leading-[60px] hamberger">
+                    <i class="fa-solid fa-bars"></i>
+                </label> -->
+
+
+                <!-- Hamberger Menu Using Flowbite Top Drawer-->
+                <!-- drawer init and toggle -->
+
+                <div class="text-left float-left">
+                    <button class="lg:hidden overflow-y-auto text-white  font-medium rounded-lg text-sm px-1 py-2.5 mr-5 mb-2 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-top-example" data-drawer-show="drawer-top-example" data-drawer-placement="top" aria-controls="drawer-top-example">
+                        <i class="fa-solid fa-bars text-2xl text-red-600 font-bold"></i>
+                    </button>
+                    
+                 </div>
+
+                <img src="images/main-logo.png" alt="" class="w-48 max-sm:w-36 ">
             </div>
             <div class="flex items-center max-sm:hidden">
                 <div class="flex">
@@ -60,22 +72,41 @@
     <nav class="w-full">
 
         <input type="checkbox" id="check" hidden>
-        <!-- <label class="text-white leading-[80px] md:leading-[80px] pl-12 md:pl-24 md:text-4xl text-3xl">Navigation</label> -->
-        <ul class="float-right lg:px-44 lg:flex items-center justify-between leading-[80px] space-x-4 text-white uppercase fixed lg:relative h-[100vh] lg:h-12 w-[100%] lg:w-full top-20 lg:top-0 top-[-100%] lg:left-0 transition-all duration-300 lg:transition-none lg:bg-red-600 max-sm:bg-black text-center">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Immigration</a></li>
-            <li><a href="#">Legal Service</a></li>
-            <li><a href="#">Fingerprint</a></li>
-            <li><a href="#">Contact Us</a></li>
+        <ul class="float-right lg:px-44 lg:flex items-center justify-between leading-[80px] space-x-4 text-white uppercase fixed lg:relative lg:h-12 w-[100%] lg:w-full top-20 lg:top-0 top-[-100%] lg:left-0 transition-all duration-300 lg:transition-none lg:bg-red-600 max-sm:bg-black text-center">
+            <li><a class="animatedBtn" href="#">Home</a></li>
+            <li><a class="animatedBtn" href="#">About Us</a></li>
+            <li><a class="animatedBtn" href="#">Immigration</a></li>
+            <li><a class="animatedBtn" href="#">Legal Service</a></li>
+            <li><a class="animatedBtn" href="#">Fingerprint</a></li>
+            <li><a class="animatedBtn" href="#">Contact Us</a></li>
         </ul>
         
     </nav>
-    
+
+    <!-- Responsive navbar start  -->
+ 
+ <!-- drawer component -->
+ <div id="drawer-top-example" class="fixed top-0 left-0 right-0 z-40 w-full p-4 transition-transform -translate-y-full bg-black" tabindex="-1" aria-labelledby="drawer-top-label">
+     <button type="button" data-drawer-hide="drawer-top-example" aria-controls="drawer-top-example" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 left-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+         <span class="sr-only">Close menu</span>
+     </button>
+     <ul class="my-12 text-center h-[60vh] text-sm font-bold uppercase text-white leading-[60px] space-x-3">
+        <li><a class="animatedBtn" href="#">Home</a></li>
+        <li ><a  class="animatedBtn" href="#">About Us</a></li>
+        <li><a class="animatedBtn" href="#">Immigration</a></li>
+        <li><a class="animatedBtn" href="#">Legal Service</a></li>
+        <li><a class="animatedBtn" href="#">Fingerprint</a></li>
+        <li><a class="animatedBtn" href="#">Contact Us</a></li>
+    </ul>
+ </div>
+ 
+    <!-- Responsive navbar end  -->
+
     <!-- Slider -->
     <div id="default-carousel" class="relative w-full z-[-2]" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative h-[80vh] max-sm:h-56 overflow-clip">
+        <div class=" relative h-[80vh] max-sm:h-56 overflow-clip">
              <!-- Item 1 -->
             <div class="hidden duration-1200 ease-in-out" data-carousel-item>
                 
@@ -83,11 +114,11 @@
                 <div class="w-full banner-1 h-full flex items-center max-sm:justify-center">
                     <div class="w-2/3 max-sm:w-5/6 lg:ps-40 max-sm:p-2 max-sm:text-center text-white">
 
-                        <h1 class="text-4xl max-sm:text-sm shadow mb-5 max-sm:mb-2 font-bold drop-shadow-2xl">PROFESSIONAL VISA APPLICATION SERVICES</h1>
-                    <p class="text-xl max-sm:text-xs mb-5 max-sm:mb-1 lg:font-bold">We are professional consultancy firm helping people and families around the world begin their immigration to Canada.</p>
+                        <h1 class="text-4xl max-sm:text-sm mb-5 max-sm:mb-2 font-bold">STUDY IN CANADA YOUR PATHWAY TO A WORLD-CLASS EDUCATION</h1>
+                    <p class="text-xl max-sm:text-xs mb-5 max-sm:mb-1 lg:font-bold">Expert Guidance and Support for a Successful Student Visa Application</p>
                 
                     <button class="text-xl max-sm:text-xs px-3 max-sm:px-2 py-2 bg-red-600 uppercase text-white rounded drop-shadow-2xl font-bold"> 
-                            Book a Consultation
+                            <a href="#">Book a Consultation</a>
                     </button>
                     </div>
                 </div>
@@ -99,8 +130,8 @@
                 <div class="w-full banner-2 h-full flex items-center max-sm:justify-center">
                     <div class="w-2/3 max-sm:w-5/6 lg:ps-40 max-sm:p-2 max-sm:text-center text-white">
 
-                        <h1 class="text-4xl max-sm:text-sm shadow mb-5 max-sm:mb-2 font-bold drop-shadow-2xl">PROFESSIONAL VISA APPLICATION SERVICES</h1>
-                    <p class="text-xl max-sm:text-xs mb-5 max-sm:mb-1 lg:font-bold">We are professional consultancy firm helping people and families around the world begin their immigration to Canada.</p>
+                        <h1 class="text-4xl max-sm:text-sm shadow mb-5 max-sm:mb-2 font-bold drop-shadow-2xl">CANADIAN IMMIGRATION & LEGAL SERVICES INC</h1>
+                    <p class="text-xl max-sm:text-xs mb-5 max-sm:mb-1 lg:font-bold">a professional consultancy firm helping people and families around the world begin their immigration to Canada.</p>
                 
                     <button class="text-xl max-sm:text-xs px-3 max-sm:px-2 py-2 bg-red-600 uppercase text-white rounded drop-shadow-2xl font-bold"> 
                             Book a Consultation
@@ -142,36 +173,36 @@
 
     <!-- Info section  -->
 
-    <section>
-        <div class="w-[80%] bg-white px-3 py-8 mt-[-28px] mx-auto grid grid-cols-3 gap-6 max-sm:grid-cols-1 max-sm:w-[98%] max-sm:mt-3 max-sm:py-3 max-sm:px-2">
+    <section class="relative z-[-2]">
+        <div class="w-[80%] bg-white px-3 py-8 lg:mt-[-28px] mx-auto grid grid-cols-3 gap-6 max-sm:grid-cols-1 max-sm:w-[98%] max-sm:mt-3 max-sm:py-3 max-sm:px-2 z-[-2]">
+            <div class="">
+                <img class="w-full" src="images/news_1_709.png" alt="Business Visa">
+                <div class="flex my-5">
+                    <img class="w-12 h-12 mr-2" src="images/icon-1.jpg" alt="">
+                    <div class="ml-2">
+                        <h2 class="text-xl font-bold uppercase">Business Visa</h2>
+                    <p class="text-xs mt-2">For those who want to invest in or about to start businesses in Canada as an immigrant.</p>
+                    <a type="button" href="#" class="mt-4 py-2 uppercase font-bold px-3 text-sm rounded-full border">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <img class="w-full" src="images/news_2_732.png" alt="Student Visa">
+                <div class="flex my-5">
+                    <img class="w-12 h-12 mr-2" src="images/icon-1.jpg" alt="">
+                    <div class="ml-2">
+                        <h2 class="text-xl font-bold uppercase">Student Visa</h2>
+                    <p class="text-xs mt-2">For study permit, student work permit, and Canadian Experience Class related needs.</p>
+                    <a type="button" href="#" class="mt-4 py-2 uppercase font-bold px-3 text-sm rounded-full border">View Details</a>
+                    </div>
+                </div>
+            </div>
             <div class="">
                 <img class="w-full" src="images/news_3_754.png" alt="Temporary Work Visa">
                 <div class="flex my-5">
                     <img class="w-12 h-12 mr-2" src="images/icon-1.jpg" alt="">
                     <div class="ml-2">
                         <h2 class="text-xl font-bold uppercase">Temporary Work Visa</h2>
-                    <p class="text-xs mt-2">For those who want to work in Canada or employers who want to hire foreign workers.</p>
-                    <a type="button" href="#" class="mt-4 py-2 uppercase font-bold px-3 text-sm rounded-full border">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <img class="w-full" src="images/news_2_732.png" alt="Temporary Work Visa">
-                <div class="flex my-5">
-                    <img class="w-12 h-12 mr-2" src="images/icon-1.jpg" alt="">
-                    <div class="ml-2">
-                        <h2 class="text-xl font-bold uppercase">Student Visa</h2>
-                    <p class="text-xs mt-2">For those who want to work in Canada or employers who want to hire foreign workers.</p>
-                    <a type="button" href="#" class="mt-4 py-2 uppercase font-bold px-3 text-sm rounded-full border">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <img class="w-full" src="images/news_1_709.png" alt="Temporary Work Visa">
-                <div class="flex my-5">
-                    <img class="w-12 h-12 mr-2" src="images/icon-1.jpg" alt="">
-                    <div class="ml-2">
-                        <h2 class="text-xl font-bold uppercase">Business Visa</h2>
                     <p class="text-xs mt-2">For those who want to work in Canada or employers who want to hire foreign workers.</p>
                     <a type="button" href="#" class="mt-4 py-2 uppercase font-bold px-3 text-sm rounded-full border">View Details</a>
                     </div>
@@ -184,7 +215,7 @@
     <section class="lg:flex justify-around lg:w-5/6 mx-auto lg:my-16 max-sm:my-8">
         <div class="lg:w-1/3 max-sm:px-8">
             <img class="text-center w-full" src="images/photo_6_010.png" alt="">
-            <h2 class="text-3xl my-3">Mr. Salauddin Ahmed</h2>
+            <h2 class="text-4xl my-3 salauddin">Mr. Salauddin Ahmed</h2>
             <h3 class="uppercase font-bold text-center text-sm">Lead Consultant</h3>
         </div>
         <div class="lg:w-2/3 lg:px-24 max-sm:px-8 max-sm:mt-10">
