@@ -53,6 +53,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.expert-section {
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+}
+.our-service {
+  background-image: url(images/background.png);
+}
 footer {
   background-image: url(https://cilsi.skitsbd.com/website_assets/images/footer-bg-linedecor.png);
   background-repeat: no-repeat;
