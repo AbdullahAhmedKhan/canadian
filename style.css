@@ -53,6 +53,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+footer {
+  background-image: url(https://cilsi.skitsbd.com/website_assets/images/footer-bg-linedecor.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
 @media only screen and (max-width: 600px) {
   .number-box {
     width: 50px;
