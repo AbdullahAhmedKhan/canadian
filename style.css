@@ -22,13 +22,13 @@
   background-size: cover;
 }
 .number-box {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   padding: 20px;
   background-color: #fef4f4;
   color: #c30505;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 900;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,4 +47,24 @@
   background-color: #c30505;
   transform: translateY(-12px);
   transition: all 0.5s ease;
+}
+.booking-section {
+  background-image: url(https://cilsi.skitsbd.com/website_assets/images/cta-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  .number-box {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    background-color: #fef4f4;
+    color: #c30505;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
 }
